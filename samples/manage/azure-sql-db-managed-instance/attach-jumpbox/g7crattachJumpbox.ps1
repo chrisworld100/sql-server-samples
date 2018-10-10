@@ -176,4 +176,4 @@ $templateParameters = @{
     administratorLoginPassword  = $administratorLoginPassword
 }
 
-New-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri ($scriptUrlBase+'/azuredeploy.json?t='+ [DateTime]::Now.Ticks) -TemplateParameterObject $templateParameters
+New-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri ($scriptUrlBase+'/g7crazuredeploy.json?t='+ [DateTime]::Now.Ticks) -TemplateParameterObject $templateParameters
